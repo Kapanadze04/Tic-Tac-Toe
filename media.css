@@ -14,4 +14,62 @@
         width: 460px;
         height: 67px;
     }
+
+    #game {
+        top: 200px;
+    }
+
+    header {
+        width: 460px;
+    }
+
+    .turn-box {
+        width: 140px;
+        height: 52px;
+        border-radius: 10px;
+    } 
+
+    .turn-box img {
+        width: 20px;
+    }
+
+    span {
+        margin-left: 13px;
+        font-size: 16px;
+        line-height: 20.16px;
+        letter-spacing: 1px;
+    }
+
+    .restart {
+        border-radius: 10px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .restart img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn-wrapper {
+        width: 460px;
+        margin-top: 20px;
+    }
+
+    .game-btn {
+        width: 140px;
+        height: 140px;
+        border-radius: 15px;
+    }
+
+    .result {
+        width: 460px;
+    }
+
+    .statistic-box {
+        width: 140px;
+        height: 72px;
+        border-radius: 15px;
+    }
+
 }
