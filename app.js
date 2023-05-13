@@ -1,7 +1,27 @@
 const newGameCpu = document.getElementById('new-game-cpu');
 const newGamePlayer = document.getElementById('new-game-player');
+const btnBox = document.querySelectorAll('.btn-box')
 const home = document.getElementById('home');
 const game = document.getElementById('game');
+const gameBtns = document.querySelectorAll('.game-btn');
+
+
+let player = "x";
+// let mode = "cpu";
+// let turn = "x";
+let freeButtons = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+// let xArray = [];
+// let oArray = [];
+let winnerCombinations = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+]
 
 newGameCpu.addEventListener('click', function() {
     home.style.display = 'none';
@@ -16,40 +36,21 @@ newGamePlayer.addEventListener('click', function() {
 
 
 
-// const choiceButtons = document.querySelectorAll('.btn-box')
-// const playButtons = document.querySelectorAll('.play-btn')
-// const home = document.querySelector('#home');
-// const board = document.querySelector('#board');
+function activateBtn(icon){
+    if(icon === "x"){
+        btnBox[0].classList.add("active")
+        btnBox[1].classList.remove("active")
+        player = "x"
+    } else {
+        btnBox[1].classList.add("active")
+        btnBox[0].classList.remove("active")
+        player = "o"
+    }
+}
 
-// let player1 = "x";
-// let mode = "cpu";
-// let turn = "x";
-// let freeButtons = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-// let xArray = [];
-// let oArray = [];
-// let winnerCombinations = [
-//     [0,1,2],
-//     [3,4,5],
-//     [6,7,8],
-//     [0,3,6],
-//     [1,4,7],
-//     [2,5,8],
-//     [0,4,8],
-//     [2,4,6],
-// ];
 
-// function activateChoice(icon) {
-//     if(icon === 'x') {
-//         choiceButtons[0].classList.add("active");
-//         choiceButtons[1].classList.remove("active");
-//         player1 = "x";
-//     } else {
-//         choiceButtons[1].classList.add("active");
-//         choiceButtons[0].classList.remove("active");
-//         player1 = "0";
-//     }
 
-// }
+
 
 // function onHoverEffects() {
 //     for (let index = 0; index < freeButtons.length; index++) {
