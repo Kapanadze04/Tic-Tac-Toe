@@ -16,6 +16,18 @@
 </head>
 <body>
 
+    <div id="info-window">
+        <h6 class="info-window-txt">OH NO, YOU LOST…</h6>
+        <div class="icon-txt">
+            <img src="./assets/icon-o.svg" alt="">
+            <h1 class="result-title">TAKES THE ROUND</h1>
+        </div>
+        <div class="result-buttons">
+            <button class="quit-btn">QUIT</button>
+            <button class="next-btn">NEXT ROUNDN</button>
+        </div>
+    </div>
+
     <section id="home" class="flex">
         <img class="logo" src="./assets/logo.svg" alt="">
         <div class="panel flex">
@@ -32,7 +44,7 @@
         </div>
 
        <button id="new-game-cpu" class="new-game-cpu txt1" onclick="startGame('cpu')">NEW GAME (VS CPU)</button>
-       <button id="new-game-player" class="new-game-player txt1" onclick="startGame('player')">NEW GAME (VS CPU)</button>
+       <button id="new-game-player" class="new-game-player txt1" onclick="startGame('player')">NEW GAME  (VS PLAYER)</button>
     </section>
         
 
@@ -65,16 +77,16 @@
 
         <div class="result">
             <div class="statistic-box">
-                <h4 class="statistic-title">X (YOU)</h4>
-                <span class="x-score">0</span>
+                <h4 id="x-scoreTxt" class="statistic-title">X (YOU)</h4>
+                <span id="x-score" class="x-score">0</span>
             </div>
             <div class="statistic-box">
                 <h4 class="statistic-title">TIES</h4>
                 <span class="ties-score">0</span>
             </div>
             <div class="statistic-box">
-                <h4 class="statistic-title">O (CPU)</h4>
-                <span class="cpu-score">0</span>
+                <h4 id="o-scoreTxt" class="statistic-title">O (CPU)</h4>
+                <span id="o-score" class="cpu-score">0</span>
             </div>
         </div>
     </section>
