@@ -23,8 +23,28 @@
             <h1 class="result-title">TAKES THE ROUND</h1>
         </div>
         <div class="result-buttons">
-            <button class="quit-btn">QUIT</button>
-            <button class="next-btn">NEXT ROUNDN</button>
+            <button class="quit-btn" onclick="quit()">QUIT</button>
+            <button class="next-btn" onclick="next()">NEXT ROUND</button>
+        </div>
+    </div>
+
+    <div id="info-window-draw">
+        <div class="icon-txt">
+            <h1 class="result-title">ROUND TIED</h1>
+        </div>
+        <div class="result-buttons">
+            <button class="quit-btn" onclick="quit()">QUIT</button>
+            <button class="next-btn" onclick="next()">NEXT ROUND</button>
+        </div>
+    </div>
+
+    <div id="info-window-restart">
+        <div class="icon-txt">
+            <h1 class="result-title">RESTART GAME?</h1>
+        </div>
+        <div class="result-buttons">
+            <button class="cancel-btn" onclick="closeWindow()">NO, CANCEL</button>
+            <button class="restart-btn" onclick="restartF()">YES, RESTART</button>
         </div>
     </div>
 
@@ -58,7 +78,7 @@
                 <img src="./assets/gray.svg" alt="">
                 <span>TURN</span>
             </div>
-            <div class="restart">
+            <div class="restart" onclick="openRestart()">
                 <img src="./assets/icon-restart.svg" alt="">
             </div>
         </header>

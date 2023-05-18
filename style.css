@@ -300,7 +300,9 @@ span {
     height: 40px;
 }
 
-#info-window {
+#info-window,
+#info-window-draw,
+#info-window-restart {
     background-color: var(--semiNavy);
     z-index: 1;
     position: absolute;
@@ -346,8 +348,25 @@ h6 {
     display: flex;
 }
 
+.cancel-btn {
+    width: 139px;
+    height: 52px;
+    background-color: var(--silver);
+    box-shadow: inset 0px -4px 0px #6B8997;
+}
+
+.restart-btn {
+    width: 151px;
+    height: 52px;
+    background-color: var(--lightYellow);
+    box-shadow: inset 0px -4px 0px #CC8B13;
+    margin-left: 16px;
+}
+
 .quit-btn,
-.next-btn {
+.next-btn,
+.cancel-btn,
+.restart-btn {
     border: none;
     border-radius: 10px;
     font-weight: 700;
